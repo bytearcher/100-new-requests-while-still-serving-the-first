@@ -1,5 +1,7 @@
 # Aargh, 100 new requests while still serving the first one!
 
+> As described in article [Aargh, 100 new requests while still serving the first one!](http://bytearcher.com/articles/100-new-requests-while-still-serving-the-first-one/);
+
 Node.js has only one thread processing JavaScript code. What happens if a request comes in and a file needs to be read from the disk, and in the meantime there are 100 new incoming connections?
 
 _Wouldn't the file read callback have to wait until all the other connections are served?_
